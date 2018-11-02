@@ -5,7 +5,6 @@ class Post < ActiveRecord::Base
     post.title = params[:title]
     post.description = params[:description]
     post.save
-    redirect_to post_path(post.id)
   end
 
 end
